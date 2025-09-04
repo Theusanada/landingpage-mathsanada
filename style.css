@@ -1,0 +1,118 @@
+/* Variaveis padronizadas */
+
+:root {
+    --color-details: #5280E2;
+    --color-background: #212226;
+    --color-fonts: #15CDCB;
+
+    --font-title: 44px;
+    --font-subtitle: 24px;
+    --font-paragraph: 18px;
+}
+
+/* Fonts do Projeto */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* Configurações Geral */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: var(--color-background);
+    color: #ffffff;
+}
+
+html, button, input, select, textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: var(--font-title);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: var(--font-subtitle);
+    font-weight: 400;
+}
+
+p {
+    font-size: var(--font-paragraph);
+    font-weight: 400;
+}
+
+button {
+    background: var(--color-details);
+
+    width: 235px;
+    height: 50px;
+    padding: 8px 35px;
+
+    border-radius: 16px;
+    border: none;
+
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ffffff;
+
+}
+
+/* Desenvolvimento */
+
+
+header {
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(--color-fonts);
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background: var(--color-background);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul a{
+
+    color: var(--color-fonts);
+    font-size: var(--font-paragraph);
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+nav ul a:hover {
+    text-decoration: underline 2px solid var(--color-fonts);
+}
