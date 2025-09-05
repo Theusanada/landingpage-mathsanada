@@ -132,9 +132,7 @@ nav ul svg {
 
 .about-me {
     display: flex;
-    align-items: center;
-    height: 100vh;
-    padding: 0 100px;
+    padding: 100px;
 }
 
 .about-me .container {
@@ -151,7 +149,36 @@ nav ul svg {
 .about-me .image-container {
     width: 50%;
     text-align:center;
+    position: relative;
+    
 }
+
+.about-me .image-container img {
+    width: 70%;
+    height: 100%;
+}
+
+.about-me .image-container .line.purple{
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--color-details);
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+}
+
+
+.about-me .image-container .line.green {
+    transform: rotate(-3.297deg);
+    border: 1px solid var(--color-fonts);
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+
+}
+
 
 /* Desenvolvimento Responsivo */
 
