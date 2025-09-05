@@ -130,6 +130,29 @@ nav ul svg {
     display: none;
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1 {
+    font-size: var(--font-title);
+    color: var(--color-fonts);
+    margin-bottom: 20px;
+}
+
+.about-me .image-container {
+    width: 50%;
+    text-align:center;
+}
+
 /* Desenvolvimento Responsivo */
 
 /* Desktop */
